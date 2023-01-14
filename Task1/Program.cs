@@ -1,26 +1,32 @@
-﻿//Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число
-//чётным (делится ли оно на два без остатка).
-//4 -> да
-//-3 -> нет
-//7 -> нет
-/*Console.WriteLine("Введите число N: ");
-int numberN = int.Parse(Console.ReadLine());
-int numberN2 = numberN%2 == 0;
-Console.WriteLine(numberN2);*/
+﻿/*Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
-Console.Write("Введите число A: ");
-int A = int.Parse(Console.ReadLine());
-int temp = A % 2;
-bool result = temp == 0;
+a = 5; b = 7 -> max = 7
+a = 2 b = 10 -> max = 10
+a = -9 b = -3 -> max = -3*/
 
-   if(result)
-{ 
-    Console.WriteLine("Да");
-}
-   else
+int max = 0;
+int min = 0;
+
+Console.Write("Введите первое число: ");
+int first = int.Parse(Console.ReadLine());
+
+Console.Write("Введите второе число: ");
+int second = int.Parse(Console.ReadLine());
+
+if(first > second)
 {
-    Console.WriteLine("Нет");
+    max = first;
+    min = second;
 }
+else
+{
+    max = second;
+    min = first;
+}
+Console.WriteLine("max = " + max + " и " + "min = " + min);
+
+
+
 
 
 
