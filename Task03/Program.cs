@@ -13,19 +13,20 @@ Console.Write("Введите второе число: ");
 int second = int.Parse(Console.ReadLine());
 
 Console.Write("Введите третье число: ");
-int thir = int.Parse(Console.ReadLine());
+int third = int.Parse(Console.ReadLine());
 
-if(first > max)
+    if(first > max)
 {
     max = first;
 }
-if(second > max)
+    if(second > max)
 {
     max = second;
 }
-if(third > max)
+    if(third > max)
 {
     max = third;
 }
 
 Console.WriteLine("max = " + max);
+
